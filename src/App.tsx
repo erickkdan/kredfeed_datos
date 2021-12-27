@@ -1,21 +1,11 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { LabelCompo } from './components/labelCompo/labelCompo'
+import styles from './assets/styles/App.module.scss'
+import { DataForm } from './dataForm/dataForm'
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-				<LabelCompo text={'new test to type script'}></LabelCompo>
-			</header>
+		<div className={styles.appContainer}>
+			<DataForm />
 		</div>
 	)
 }

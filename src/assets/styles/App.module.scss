@@ -1,0 +1,24 @@
+@import './tokens';
+
+html {
+  font-size: 10px;
+  background: url(https://kredfeed-assets.s3.amazonaws.com/images/businessman.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.appContainer{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+
+

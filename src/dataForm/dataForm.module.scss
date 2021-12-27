@@ -1,0 +1,85 @@
+@import '../assets/styles/tokens';
+
+.mainContainer {
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  z-index: 3;
+  border-radius: 4px;
+  background: white;
+  margin-top: $spacing-small;
+
+  .headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: $spacing-medium;
+    padding-bottom: $spacing-medium;
+
+    .kredFeedImg{
+      width: 170px;
+      height: auto;
+    }
+  }
+
+  .formContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding: $spacing-medium;
+
+    .sectionDivider{
+      width: 100%;
+      margin: $spacing-small ;
+    }
+
+    .title{
+      font-size: $font-size-x-large;
+      font-family: Montserrat, sans-serif;
+      color: $color-gray-dark;
+    }
+
+    .submitButton{
+      height: 4rem;
+      width: 55rem;
+      margin-top: $spacing-large;
+      border-radius: $border-radius;
+      border: $border-solid-1 $color-orange-light;
+      background-color: $color-orange-light;
+      font-size: $font-size-large;
+      color: $color-gray-black;
+
+      &:hover{
+        border: $border-solid-1 $color-orange-light;
+        background-color: $color-orange-kredfeed;
+        color: black;
+      }
+    }
+  }
+
+  .footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $spacing-medium;
+
+    .link{
+      font-size: $font-size-small;
+      padding: $spacing-none $spacing-small;
+      color: $color-gray-link;
+      text-decoration: none;
+      font-weight: $font-weight-light;
+    }
+
+    .divider{
+      font-size: $font-size-small;
+      color: $color-gray-link;
+      font-weight: $font-weight-light;
+    }
+  }
+
+  .marginRight{
+    margin-right: $spacing-x-small;
+  }
+}
